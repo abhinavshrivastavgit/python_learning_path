@@ -15,3 +15,9 @@ print(f"Updated Stock: {gpu_inventory}")
 # 3. Counting items (The len function)
 total_chips = len(gpu_inventory)
 print(f"We are now managing {total_chips} different product lines.")
+# Discontinuing an old model
+discontinued = "A100"
+if discontinued in gpu_inventory:
+    gpu_inventory.remove(discontinued)
+    print(f"\nProduct Lifecycle Update: {discontinued} has been discontinued.")
+print(f"Current Active Inventory: {gpu_inventory}")
