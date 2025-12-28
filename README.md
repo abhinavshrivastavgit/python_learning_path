@@ -27,7 +27,7 @@ Welcome to my technical lab. As an aspiring AI PM, I believe that understanding 
 **Goal:** Automate technical screening logic.
 - **Key Concepts:** `.lower()`, `.strip()`, and `if-elif-else` branches.
 - **File:** [Link to Hiring Bot Repo](https://github.com/abhinavshrivastavgit/hiring_bot)
-- - **File:** [Link to Chip Margin Repo](https://github.com/abhinavshrivastavgit/chip_margin)
+- **File:** [Link to Chip Margin Repo](https://github.com/abhinavshrivastavgit/chip_margin)
 
 ---
 
