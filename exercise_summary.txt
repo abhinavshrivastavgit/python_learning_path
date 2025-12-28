@@ -1,0 +1,8 @@
+exercise 3 part 2 
+
+Question:
+ rewrite your pay program using try and exceptso that your program handles non_numeric input gracefukky by a message and existing the program.
+Approach:
+ 1. we will take input from the user "enter hours" and second "enter the rate"
+ 2. then we will use conditional operator "try" and "except"
+ 3. in "try" we will use general statement as usual and "except" if it fails then, we will print statement.
