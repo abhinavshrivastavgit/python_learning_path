@@ -1,0 +1,69 @@
+=====================================================
+PROJECT: Robust Performance Tracker (v1.1)
+AUTHOR: Vaishnavi Shrivastav
+ROLE: AI Product Manager
+STATUS: Deployed to GitHub
+=====================================================
+
+1. EXECUTIVE SUMMARY
+-----------------------------------------------------
+Version 1.1 focuses on "Data Robustness." In an AI 
+Product Management context, raw data is often messy 
+or redundant. This script ensures that data is 
+cleaned, types are validated, and edge cases (like 
+identical values) do not crash the system.
+
+2. CORE FEATURE HIGHLIGHTS
+-----------------------------------------------------
+* DATA INTEGRITY: 
+  Forcing int() conversion prevents 'Lexicographical' 
+  sorting errors where '2' might be seen as greater 
+  than '10'.
+
+* REDUNDANCY FILTERING: 
+  Uses Python's set() method to remove duplicate 
+  entries. This ensures the "Runner-Up" is a 
+  distinct performance tier, not just a repeated 
+  top score.
+
+* SYSTEM STABILITY (PRECAUTION): 
+  Includes a logical length-check. If the dataset 
+  collapses to a single unique value, the script 
+  gracefully informs the user instead of throwing 
+  a terminal error (IndexError).
+
+* OPTIMIZED RETRIEVAL: 
+  Uses negative indexing ([-1], [-2]) to access the 
+  highest values in a sorted list efficiently.
+
+3. DATA PIPELINE VISUALIZATION
+-----------------------------------------------------
+INPUT [Raw Strings] 
+  --> CASTING [Integers] 
+    --> CLEANING [Set/Unique] 
+      --> SORTING [Ascending] 
+        --> VALIDATION [Length Check] 
+          --> OUTPUT [Final Results]
+
+
+
+4. CODE STRUCTURE
+-----------------------------------------------------
+Phase 1: Collection & Conversion
+Phase 2: Removing Duplicates (set())
+Phase 3: Sorting (unique_nums.sort())
+Phase 4: Safety Check & Terminal Output
+
+5. PM EVALUATION (EDGE CASES)
+-----------------------------------------------------
+Scenario A (Duplicates): [95, 95, 80]
+Result: Winner: 95, Runner-Up: 80 (Success)
+
+Scenario B (Single Value): [100, 100, 100]
+Result: "No Runner-Up: All values are identical" (Success)
+
+6. FUTURE ROADMAP
+-----------------------------------------------------
+- V2.0: Dictionary Implementation (Mapping names to scores)
+- V2.1: JSON Data Export for NVIDIA Dashboarding
+=====================================================
