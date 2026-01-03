@@ -1,0 +1,58 @@
+=====================================================
+PROJECT: Largest Value Index Finder
+VERSION: 1.0
+AUTHOR: Abhinav Shrivastav
+GOAL: Identify maximum performance metrics for AI PM Analysis
+=====================================================
+
+1. DESCRIPTION
+-----------------------------------------------------
+This script allows a user to input a series of numerical values 
+(representing performance scores, GPU benchmarks, or model accuracy).
+The program iterates through the data to find the highest value 
+and records its exact position (index) within the dataset.
+
+2. TECHNICAL LOGIC (THE "KING OF THE HILL" METHOD)
+-----------------------------------------------------
+The algorithm follows these specific steps:
+
+A. INITIALIZATION:
+   - Sets 'largest_num' to the first item in the list.
+   - Sets 'trigger' (index tracker) to 0.
+   - This ensures that if all numbers are negative, the script still works.
+
+B. ITERATION (The While Loop):
+   - The loop runs 'n' times (once for every item).
+   - In each cycle, it compares the current_value to the largest_num.
+
+C. CONDITIONAL TRIGGER:
+   - IF (current_value > largest_num):
+     * Update largest_num to the new value.
+     * Update 'trigger' to the current 'count'.
+   - ELSE:
+     * Keep the old values.
+
+D. INCREMENT:
+   - The 'count' increases by 1 to move to the next "shelf" in the list.
+
+3. DATA OUTPUT EXAMPLE
+-----------------------------------------------------
+Input: [21, 23, 34, 54, 72]
+Processing:
+- Check 21: Largest is 21, Trigger is 0
+- Check 23: 23 > 21? Yes. Largest is 23, Trigger is 1
+- Check 34: 34 > 23? Yes. Largest is 34, Trigger is 2
+- Check 54: 54 > 34? Yes. Largest is 54, Trigger is 3
+- Check 72: 72 > 54? Yes. Largest is 72, Trigger is 4
+
+Final Result: Index num[4] holds the value 72.
+
+4. PM INSIGHTS & FUTURE ROADMAP
+-----------------------------------------------------
+- ROBUSTNESS: The script uses int() conversion to ensure mathematical 
+  accuracy during comparisons.
+- OPTIMIZATION: The 'trigger' variable is only updated when a new record 
+  is found, saving memory cycles.
+- NEXT STEP: Implementation of "Runner-Up" logic to find the 
+  second-highest performing model.
+=====================================================
