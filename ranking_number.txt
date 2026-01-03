@@ -1,7 +1,6 @@
 =====================================================
 PROJECT: Robust Performance Tracker (v1.1)
-AUTHOR: Vaishnavi Shrivastav
-ROLE: AI Product Manager
+AUTHOR: Abhinav Shrivastav
 STATUS: Deployed to GitHub
 =====================================================
 
