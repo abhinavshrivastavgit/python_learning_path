@@ -1,0 +1,56 @@
+=====================================================
+PROJECT: Hand Tracking Data Structure Foundations
+VERSION: 1.0
+AUTHOR: Abhinav Shrivastav
+GOAL: Organize AI sensor data using Dictionaries, Tuples, and Sets
+=====================================================
+
+1. DESCRIPTION
+-----------------------------------------------------
+This module serves as the structural foundation for the Sign 
+Language AI. It takes raw camera metadata and finger coordinates 
+and packages them into Python’s most efficient containers to 
+ensure the program runs without lag or data corruption.
+
+2. TECHNICAL LOGIC (THE "DATA PACKAGING" METHOD)
+-----------------------------------------------------
+The system categorizes data into three distinct "safety" zones:
+
+A. TUPLES (THE ANCHOR):
+   - Used for: Camera Resolution (1280, 720).
+   - Logic: Since the screen size doesn't change during a session, 
+     we "lock" it in a tuple to prevent accidental modification.
+
+B. SETS (THE FILTER):
+   - Used for: Detected Gesture History {"A", "B"}.
+   - Logic: If the AI detects the same letter 30 times in one second, 
+     the Set automatically deletes the 29 duplicates.
+
+C. DICTIONARIES (THE HUB):
+   - Used for: The Master Hand Object (hand_info).
+   - Logic: Connects labels (Keys) to values. This allows the program 
+     to ask for "label" or "resolution" instead of searching by numbers.
+
+3. DATA OUTPUT EXAMPLE
+-----------------------------------------------------
+Input: 
+- Resolution: 1280, 720
+- Detected: "A", "B", "A"
+
+Processing:
+- Packing resolution into Tuple: (1280, 720)
+- Filtering letters into Set: {'A', 'B'}
+- Nesting into Dictionary: { "label": "Left Hand", ... }
+
+Final Result: 
+{ 'label': 'Left Hand', 'resolution': (1280, 720), 'letters': {'A', 'B'} }
+
+4. PM INSIGHTS & FUTURE ROADMAP
+-----------------------------------------------------
+- DATA INTEGRITY: Using Tuples for resolution prevents "TypeErrors" 
+  during frame-scaling math.
+- MEMORY EFFICIENCY: Sets reduce the memory footprint by ignoring 
+  redundant AI detections.
+- NEXT STEP: Implementing OpenCV to feed real-time frames into 
+  this dictionary structure.
+=====================================================
