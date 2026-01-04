@@ -17,13 +17,23 @@ Welcome to my technical lab. As an aspiring **AI Product Manager**, I believe th
 
 ### 🤖 Logic & Comparison Engines
 **Goal:** Automating decision-making processes through code.
-- **Largest Number:** Identifies the highest value within a dataset to assist in prioritizing product metrics.
-- **Files:** `largest_number.py` & `largest_number.txt`
+- **Grading Logic Engine:** Automated performance tiering using threshold-based logic gates.
+- **Largest Number:** Identifies peak values within a dataset to assist in prioritizing product metrics.
+- **Files:** `random_grading.py`, `random_grading.txt`, `largest_number.py`, & `largest_number.txt`
 
-### 📝 Project Documentation & Exercises
-- **README.md:** Project overview and AI PM profile.
-- **exercise_III_part_2.py:** Coursera technical logic exercises.
-- **exercise_summary.txt:** Documentation of remaining updates and logic flow.
+### 🏥 System Health Monitoring
+**Goal:** Proactive hardware maintenance simulation.
+- **Logic:** Threshold-based monitoring of system vitals (CPU/RAM) for AI-integrated robotics.
+- **Files:** `robot_health.py` & `robot_health.txt`
+
+### 👁️ Computer Vision Data Structuring
+**Goal:** Build "Engineering Intuition" for how AI models store metadata.
+- **Confidence Builder:** Demonstrates the use of **Tuples** (for fixed resolution), **Sets** (for unique detection values), and **Dictionaries** (for complex object labeling).
+- **Files:** `confidence_builder01.py` & `confidence_builder01.txt`
+
+### 📝 Project Documentation & Skills
+- **README.md:** Professional portfolio overview and project guide.
+- **Exercise Summary:** Ongoing documentation of technical logic flow and future roadmap updates.
 
 ---
 
