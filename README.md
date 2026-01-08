@@ -1,4 +1,4 @@
-# 🚀 Python Learning Lab: AI Product Management Edition
+# 🚀 Python General Project Lab: AI Product Management Edition
 
 Welcome to my technical lab. As an aspiring **AI Product Manager**, I believe that understanding the "how" behind the code is just as important as the "why" behind the product. This repository tracks my evolution from basic syntax to building the logic engines that power AI-driven products.
 
